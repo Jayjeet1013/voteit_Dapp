@@ -1,25 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   <div className='body'>
+   <h1 >Welcome to Voteit </h1>
+   <p>YOu can give your suggestion related to blockchain </p>
+       <input className='input' type='text' placeholder= 'write your suggestion' / >
+      <button className='btn'>Submit</button>
+      
+  </div>
+ 
+  
+  ); 
+
+
 }
 
 export default App;
