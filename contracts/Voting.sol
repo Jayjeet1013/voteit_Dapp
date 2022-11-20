@@ -6,13 +6,11 @@ pragma solidity ^0.8.9;
 
 
 
-contract voting{
+contract Voting{
      string public question;
-   uint   sayyes=0;
-   uint   sayno=0;
+uint public vote;
 address owner;
-string loss;
-string winner;
+
    constructor(){
     owner = msg.sender;
    }
@@ -24,15 +22,9 @@ function askquesition( string memory _question) public onlyowner returns(string 
 {     
      return question=_question;
 }
-function yes() public  {
-      sayyes++;
+
+function Result() public {
+  vote++;
 }
-function no() public {
-    sayno++;
-}
-function result( ) public view  returns(string memory ){
-if(sayyes > sayno) {
- return "win";
-}return "loss";
-}
+
 }
